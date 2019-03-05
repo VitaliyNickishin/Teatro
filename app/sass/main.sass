@@ -1,0 +1,167 @@
+@import "colors" //интегрируем переменные с цветами
+
+
+/*Specification*/
+
+
+ul, li
+	padding: 0
+	margin: 0
+	list-style: none
+
+p, h1, h2, h3
+	margin: 0
+
+body
+ font-family: 'Roboto', sans-serif
+ font-size: 14px
+ font-weight: 400
+ color: $body-text
+
+input
+ outline: none
+ border-top: 0
+button:focus
+	outline: none
+
+	
+/*Hero section*/
+.header
+	background-color: $menu-bg
+
+.logo
+	line-height: 85px
+	a
+		text-decoration: none
+		img
+			width: 290px
+			height: 65px
+			
+
+.navbar
+ //padding: 1.8rem 1rem
+
+.container-header
+	max-width: 1200px
+	min-height: 85px
+	padding: 0
+
+/*меню*/
+.navbar-nav
+	margin-left: auto
+	margin-right: auto
+	padding-top: 15px
+	/*Активная ссылка-Главная*/
+	.active
+		a
+			position: relative
+			color: $hover
+			&::after //полоса для активной
+				content: ''
+				bottom: 0
+				left: 0
+				position: absolute
+				width: 100%
+				height: 1px
+				background-color: $active
+		/*Остальные ссылки*/		
+	.nav-link
+		color: $body-text
+		text-transform: uppercase
+		position: relative
+		&::before //полоса для остальных
+			content: ''
+			bottom: 0
+			left: 0
+			position: absolute
+			width: 100%
+			height: 1px
+			background-color: $active
+			transition: 0.2s
+			transform: scaleX(0)
+		&:hover:before 
+			transform: scaleX(1)
+		&:hover
+   color: $hover
+
+
+
+
+/*кнока меню*/
+.navbar-toggler
+	//background-color: $button-bg
+	width: 82px
+	height: 73px
+	border-radius: 0
+	position: relative
+	border: 0
+	span, span::before, span::after
+		position: absolute
+  top: 50%
+  margin-top: -2px
+  left: 50%
+  margin-left: -15px
+  width: 30px
+  height: 4px
+  background-color: #fff
+ span::before, span::after 
+  content: ''
+  display: block
+  transition: 0.2s
+ span::before 
+  transform: translateY(-7px)
+	span::after 
+  transform: translateY(7px)
+
+.widget
+	display: flex
+	padding-top: 20px
+	figure
+		margin-right: 10px
+		img
+			width: 30px
+			height: 30px
+
+	/*Телефон и время работы*/		
+	.box-content
+		h3
+			font-weight: 600
+			font-size: 19px
+			a
+				text-decoration: none
+				color: $body-text
+		p
+			font-size: 16px
+			font-weight: 400
+			color: #7a7a7a
+			text-align: right
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" //интегрируем медиа запросы

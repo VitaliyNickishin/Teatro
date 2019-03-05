@@ -1,0 +1,12 @@
+#folder 
+node_modules/
+dist/
+app/libs
+app/js/libs.min
+app/css/bootstrap.min
+
+#files
+.bowerrc
+package.json
+package-lock.json
+gulpfile.js
