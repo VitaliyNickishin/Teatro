@@ -110,7 +110,6 @@ button:focus {
 .navbar-toggler {
   width: 82px;
   height: 73px;
-  border-radius: 0;
   position: relative;
   border: 0;
 }
@@ -124,6 +123,7 @@ button:focus {
   width: 30px;
   height: 4px;
   background-color: #fff;
+  border-radius: 3px;
 }
 
 .navbar-toggler span::before, .navbar-toggler span::after {
@@ -193,6 +193,18 @@ button:focus {
   }
   .widget .box-content__description {
     font-size: 14px;
+  }
+}
+
+/* 576 - 768 px */
+@media screen and (max-width: 768px) {
+  .logo a img {
+    width: 290px;
+    height: 65px;
+  }
+  /*кнока меню*/
+  .navbar-toggler {
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
