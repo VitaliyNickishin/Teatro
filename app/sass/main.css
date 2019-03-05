@@ -147,7 +147,10 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px 15px 0 0;
   /*Телефон и время работы*/
 }
 
@@ -189,22 +192,32 @@ button:focus {
   }
   .widget .box-content__phone {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
   }
   .widget .box-content__description {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
 /* 576 - 768 px */
 @media screen and (max-width: 768px) {
   .logo a img {
-    width: 290px;
-    height: 65px;
+    width: 200px;
   }
   /*кнока меню*/
-  .navbar-toggler {
-    margin: 0 auto;
+  .widget {
+    /*Телефон и время работы*/
+  }
+  .widget figure img {
+    width: 30px;
+    height: 30px;
+  }
+  .widget .box-content__phone {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .widget .box-content__description {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */
