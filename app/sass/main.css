@@ -143,6 +143,28 @@ button:focus {
           transform: translateY(7px);
 }
 
+/*при клике на меню средняя полоса обнуляется*/
+.navbar-toggler_active span {
+  height: 0;
+}
+
+/*при клике на меню верхняя полоса поворачивается*/
+.navbar-toggler_active span:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+/*при клике на меню нижняя полоса поворачивается*/
+.navbar-toggler_active span:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+/*иконка телефона*/
 .widget {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,9 +224,26 @@ button:focus {
 /* 576 - 768 px */
 @media screen and (max-width: 768px) {
   .logo a img {
-    width: 200px;
+    width: 170px;
   }
-  /*кнока меню*/
+  /*меню*/
+  .navbar-nav {
+    /*Активная ссылка-Главная*/
+    /*кнока меню*/
+  }
+  .navbar-nav .active a::after {
+    display: none;
+  }
+  .navbar-toggler {
+    width: 82px;
+    height: 73px;
+    position: relative;
+    border: 0;
+  }
+  .navbar-toggler span, .navbar-toggler span::before, .navbar-toggler span::after {
+    background-color: #ff0000;
+  }
+  /*иконка телефона*/
   .widget {
     /*Телефон и время работы*/
   }
@@ -214,10 +253,29 @@ button:focus {
   }
   .widget .box-content__phone {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
   }
   .widget .box-content__description {
     font-size: 14px;
+  }
+  /* 576 - 768 px */
+}
+
+@media screen and (max-width: 576px) {
+  /*кнока меню*/
+  .navbar-toggler {
+    left: 25%;
+  }
+  .widget {
+    padding: 20px 0 0;
+  }
+  .widget figure img {
+    width: 50px;
+    height: 50px;
+  }
+  /*Телефон и время работы*/
+  .box-content {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

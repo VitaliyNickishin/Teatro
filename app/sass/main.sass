@@ -113,6 +113,21 @@ button:focus
 	span::after 
   transform: translateY(7px)
 
+/*при клике на меню средняя полоса обнуляется*/
+.navbar-toggler_active span 
+ height: 0
+
+/*при клике на меню верхняя полоса поворачивается*/
+.navbar-toggler_active span:before 
+ transform: rotate(-45deg)
+ transform-origin: center
+
+/*при клике на меню нижняя полоса поворачивается*/
+.navbar-toggler_active span:after 
+ transform: rotate(45deg)
+ transform-origin: center
+
+/*иконка телефона*/
 .widget
 	display: flex
 	justify-content: flex-end
