@@ -1,5 +1,9 @@
 @charset "UTF-8";
-/*Specification*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 ul, li {
   padding: 0;
   margin: 0;
@@ -26,7 +30,6 @@ button:focus {
   outline: none;
 }
 
-/*Hero section*/
 .header {
   background-color: #020202;
 }
@@ -55,6 +58,8 @@ button:focus {
 .navbar-nav {
   margin: 0 auto;
   padding-top: 15px;
+  background-color: #ededed;
+  width: 100%;
   /*Активная ссылка-Главная*/
 }
 
