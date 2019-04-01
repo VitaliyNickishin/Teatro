@@ -30,8 +30,13 @@ button:focus {
   outline: none;
 }
 
-.header {
+.header-navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
   background-color: #020202;
+  z-index: 99;
 }
 
 .logo {
@@ -48,9 +53,8 @@ button:focus {
   height: 65px;
 }
 
-.container-header {
+.container-user {
   max-width: 1200px;
-  min-height: 85px;
   padding: 0;
 }
 
@@ -58,8 +62,6 @@ button:focus {
 .navbar-nav {
   margin: 0 auto;
   padding-top: 15px;
-  background-color: #ededed;
-  width: 100%;
   /*Активная ссылка-Главная*/
 }
 
@@ -282,5 +284,26 @@ button:focus {
   .box-content {
     display: none;
   }
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero__title {
+  display: block;
+  margin-top: 250px;
+  max-width: 615px;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.hero__line {
+  color: #ff0000;
+  font-weight: 900;
+  font-size: 120%;
 }
 /*# sourceMappingURL=main.css.map */
