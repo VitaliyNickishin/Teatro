@@ -30,13 +30,30 @@ button:focus {
   outline: none;
 }
 
+.btn-user {
+  padding: 5px;
+  background-color: #990f16;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  border-radius: 0;
+  max-width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-user_t {
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
+  color: #fff;
+  text-transform: uppercase;
+}
+
 .header-navbar {
   position: fixed;
   left: 0;
   right: 0;
   width: 100%;
   background-color: #020202;
-  z-index: 99;
 }
 
 .logo {
@@ -289,21 +306,39 @@ button:focus {
 .hero {
   background-size: cover;
   background-position: center;
-  height: 100vh;
+}
+
+.hero__content {
+  margin-top: 250px;
+  max-width: 615px;
 }
 
 .hero__title {
-  display: block;
-  margin-top: 250px;
-  max-width: 615px;
   font-size: 43px;
   font-weight: 400;
   line-height: 1.1;
 }
 
 .hero__line {
-  color: #ff0000;
+  color: #990f16;
   font-weight: 900;
   font-size: 120%;
+}
+
+.hero__subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.hero__btn {
+  margin-top: 20px;
+}
+
+/* 576 - 768 px */
+@media screen and (max-width: 576px) {
+  /*кнока меню*/
+  .hero__title {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
