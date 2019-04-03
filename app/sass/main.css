@@ -73,18 +73,15 @@ button:focus {
   }
 }
 
-.header-navbar {
-  position: fixed;
+.header-menu {
   left: 0;
   right: 0;
   width: 100%;
   background-color: #020202;
-  z-index: 99px;
 }
 
 .logo {
   line-height: 85px;
-  padding: 0 0 0 15px;
 }
 
 .logo a {
@@ -217,7 +214,7 @@ button:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 20px 15px 0 0;
+  padding-top: 20px;
   /*Телефон и время работы*/
 }
 
@@ -247,30 +244,30 @@ button:focus {
 /* 768 - 992 px */
 @media screen and (max-width: 992px) {
   .logo a img {
-    width: 196px;
+    width: 100%;
     height: 44px;
+  }
+  .nav-link {
+    font-size: 13px;
   }
   .widget {
     /*Телефон и время работы*/
   }
   .widget figure img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
   .widget .box-content__phone {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 10px;
   }
   .widget .box-content__description {
-    font-size: 13px;
+    font-size: 9px;
   }
 }
 
 /* 576 - 768 px */
-@media screen and (max-width: 768px) {
-  .logo a img {
-    width: 170px;
-  }
+@media screen and (max-width: 767px) {
   /*меню*/
   .navbar-nav {
     /*Активная ссылка-Главная*/
@@ -312,7 +309,7 @@ button:focus {
     left: 25%;
   }
   .widget {
-    padding: 20px 0 0;
+    padding-top: 15px;
   }
   .widget figure img {
     width: 50px;
