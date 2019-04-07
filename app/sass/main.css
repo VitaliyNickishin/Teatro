@@ -475,4 +475,82 @@ button:focus {
     max-width: 240px;
   }
 }
+
+.about-us {
+  margin-top: 20px;
+  position: relative;
+  /*герб*/
+}
+
+.about-us-bg {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-us-content {
+  padding: 100px 10px;
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.1;
+  border: 15px solid #ebecec;
+}
+
+.about-us-content h2 {
+  margin: auto;
+  max-width: 720px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.about-us-content p {
+  margin: 10px auto 50px;
+  max-width: 520px;
+}
+
+.about-us-content span {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+}
+
+.about-us-content span a {
+  text-decoration: none;
+  color: #990f16;
+}
+
+@media screen and (max-width: 992px) {
+  .about-us-content {
+    padding: 50px 0;
+  }
+  .about-us h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-us-content {
+    font-size: 20px;
+  }
+  .about-us h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-us-content {
+    font-size: 20px;
+  }
+  .about-us h2 {
+    font-size: 25px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
