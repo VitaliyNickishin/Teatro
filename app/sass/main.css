@@ -64,6 +64,10 @@ button:focus {
   text-transform: uppercase;
 }
 
+.btn-user:hover {
+  background-color: #820d13;
+}
+
 /*Общий заголовок*/
 .common-title {
   font-size: 43px;
@@ -558,14 +562,10 @@ button:focus {
   background-color: #020202;
 }
 
-.footer-title {
-  text-align: center;
-  margin-left: 16px;
-}
-
 .footer-navbar-nav {
   width: 95px;
   font-size: 15px;
+  margin: 0;
 }
 
 .footer-navbar-nav .footer-item-active {
@@ -607,6 +607,86 @@ button:focus {
 }
 
 .footer-form {
-  max-width: 300px;
+  padding: 8px 50px 0 90px;
+}
+
+.footer-form__title {
+  margin-bottom: 20px;
+}
+
+.footer-form__btn {
+  background-color: #990f16;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-form__btn:hover {
+  background-color: #820d13;
+}
+
+.footer-info {
+  padding-left: 50px;
+}
+
+.footer-logo {
+  margin-bottom: 25px;
+  width: 155px;
+}
+
+.footer-contacts__adress {
+  font-size: 16px;
+}
+
+.footer-contacts__tel {
+  font-size: 20px;
+}
+
+.footer-down {
+  margin-top: 80px;
+  border-top: 1px solid #fff;
+  color: #636363;
+  font-size: 16px;
+}
+
+.footer-down__item {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-navbar {
+    display: none;
+  }
+  .footer-form {
+    padding: 8px 0;
+  }
+  .footer-info {
+    padding-left: 20px;
+  }
+  .footer-contacts__adress {
+    font-size: 14px;
+  }
+  .footer-contacts__tel {
+    font-size: 16px;
+  }
+  .footer-down {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-info {
+    padding-left: 0;
+    text-align: center;
+  }
+  .footer-logo {
+    margin: 20px auto;
+  }
+  .footer-down {
+    margin-top: 40px;
+  }
+  .footer-down__item {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
