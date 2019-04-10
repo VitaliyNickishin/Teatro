@@ -12,6 +12,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand:400,700" rel="stylesheet">
 
 
+	<!-- Animation -->	
+	<link rel="stylesheet" href="css/animate.css">
 	<!-- Custom styles for this template -->
 	<link rel="stylesheet" href="sass/main.css">
 
@@ -19,7 +21,7 @@
 
 <body>
 	<header class="header" id="header">
-		<div class="header-menu">
+		<div class="header-menu animated fadeInDown">
 		 <div class="container">
 				<div class="row no-gutters">
 
@@ -82,7 +84,7 @@
 										механику сцены, постановочное освещение, звуковое 
 										оборудование, сценические эффекты и конструкции, 
 										мультимедийные и конференц-системы, одежду сцены</p>
-									<div class="hero__btn btn-user">
+									<div class="hero__btn btn-user animated fadeIn">
 										<button type="button" class="btn btn-user_t">Оставить заявку</button>
 									</div><!-- /.hero__btn -->
 							</div><!-- /.hero__content -->
@@ -161,43 +163,43 @@
 			<div class="row">
 
 				<div class="col-lg-4">
-					<a href="#" class="production-link">
-						<figure class="production-link__image">
+					<a href="#" id="vc_pop" class="production-box animated fadeIn">
+						<figure class="production-box__image">
 								<img src="img/production/1.jpg" alt="">
 						</figure>
-				</a>
-				<div class="production-content">
-						<p>Театральное оборудование и материалы</p>
-				</div><!-- /.production-description -->
+						<div class="production-box__content">
+							<p>Театральное оборудование и материалы</p>
+						</div><!-- /.production-box__content -->
+					</a>
 				</div><!-- /.col-lg-4 -->
 
 				<div class="col-lg-4">
-					<a href="#" class="production-link">
-						<figure class="production-link__image">
+					<a href="#" class="production-box animated fadeIn production-box_two">
+						<figure class="production-box__image">
 								<img src="img/production/2.jpg" alt="">
 						</figure>
-				</a>
-				<div class="production-content">
-						<p>Сценическое оборудование и спецэффекты</p>
-				</div><!-- /.production-description -->
+						<div class="production-box__content">
+							<p>Сценическое оборудование и спецэффекты</p>
+						</div><!-- /.production-box__content -->
+					</a>
 				</div><!-- /.col-lg-4 -->
 
 				<div class="col-lg-4">
-					<a href="#" class="production-link">
-						<figure class="production-link__image">
+					<a href="#" class="production-box animated fadeIn production-box_three">
+						<figure class="production-box__image">
 								<img src="img/production/3.png" alt="">
 						</figure>
-				</a>
-				<div class="production-content">
-						<p>Вспомогательное оборудование	и расходные материалы</p>
-				</div><!-- /.production-description -->
+						<div class="production-box__content">
+							<p>Вспомогательное оборудование	и расходные материалы</p>
+						</div><!-- /.production-box__content -->
+					</a>
 				</div><!-- /.col-lg-4 -->
 
 			</div><!-- /.row -->
 
 			<div class="row">
 				<div class="col-lg-12">
-						<div class="production-btn btn-user">
+						<div class="production-btn btn-user animated fadeIn">
 							<button type="button" class="btn btn-user_t">Открыть полный каталог</button>
 						</div><!-- /.production__btn -->	
 				</div><!-- /.col-lg-12 -->
@@ -381,6 +383,10 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	
+	<!--Срабатывание анимации при прокрутке-->
+	<script src="js/viewportChecker.js"></script>
+
 
 	<script src="js/main.js"></script> 
 </body>

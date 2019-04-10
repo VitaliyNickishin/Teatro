@@ -34,6 +34,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 button:focus {
   outline: none;
 }
@@ -414,33 +418,41 @@ button:focus {
   color: #000;
 }
 
-.production-link {
+.production-box {
   display: block;
   overflow: hidden;
   text-align: center;
-  text-decoration: none;
 }
 
-.production-link__image {
-  -webkit-transition: -webkit-transform .25s ease;
-  transition: -webkit-transform .25s ease;
-  transition: transform .25s ease;
-  transition: transform .25s ease, -webkit-transform .25s ease;
+.production-box_two {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.production-box_three {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.production-box__image {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
   -webkit-filter: brightness(100%) contrast(100%) saturate(0%) blur(0) hue-rotate(0deg);
           filter: brightness(100%) contrast(100%) saturate(0%) blur(0) hue-rotate(0deg);
 }
 
-.production-link__image:hover {
+.production-box__image:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   -webkit-filter: none;
           filter: none;
 }
 
-.production-content {
+.production-box__content {
   font-size: 20px;
   color: #000;
-  text-align: center;
 }
 
 .production-btn {
