@@ -4,17 +4,10 @@ $('.navbar-toggler').on('click', function(e) {
  $(this).toggleClass('navbar-toggler_active');//находим.navbar-toggler и создаем класс navbar-toggler_active для переварачивания полосок
  
 });
-/*
-jQuery(function($){
-  $("#vc_pop").hide();
-  $("#viewport").viewportChecker({
-  callbackFunction:function(){
-  $("#vc_pop").show();
-  $("#viewport").show();
-  }
-  });
-  });
-  */
+
+/* activate wow.js*/
+new WOW().init();
+
 /*
 windows.onload = function(){
 
