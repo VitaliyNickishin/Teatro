@@ -702,6 +702,7 @@ button:focus {
   }
 }
 
+/*Page portfolio*/
 .portfolio {
   background-size: cover;
   background-position: bottom center;
@@ -778,6 +779,100 @@ button:focus {
   .credibility-wrap__item {
     margin-top: 20px;
     max-width: 360px;
+  }
+}
+
+/*Page contacts*/
+.contacts {
+  background-size: cover;
+  background-position: top center;
+}
+
+.contacts__content {
+  margin-top: 250px;
+  max-width: 600px;
+}
+
+.contacts__title {
+  font-size: 40px;
+}
+
+.contacts__btn {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 425px) {
+  .contacts__title {
+    font-size: 30px;
+  }
+}
+
+.our-contacts {
+  background-color: #020202;
+}
+
+.our-contacts__title {
+  margin-bottom: 50px;
+}
+
+.our-contacts__title h2 {
+  font-size: 43px;
+}
+
+.our-contacts-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+.our-contacts-box img {
+  margin-right: 10px;
+  height: 50px;
+}
+
+.our-contacts-box address {
+  margin: 0;
+}
+
+.our-contacts-box__tel a {
+  display: block;
+  color: #fff;
+}
+
+.our-contacts-box__email a {
+  display: block;
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .our-contacts__title {
+    text-align: center;
+  }
+  .our-contacts-box {
+    margin: auto;
+    padding-bottom: 20px;
+    max-width: 350px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .our-contacts__title {
+    text-align: center;
+  }
+  .our-contacts__title h2 {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
