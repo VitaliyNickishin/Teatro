@@ -86,6 +86,21 @@ button:focus {
   font-size: 120%;
 }
 
+/*Переход между секцими*/
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(58%, rgba(2, 2, 2, 0)), to(#020000));
+  background-image: linear-gradient(180deg, rgba(2, 2, 2, 0) 58%, #020000 100%);
+  -webkit-transition: background 0.3s,border-radius 0.3s,opacity 0.3s;
+  transition: background 0.3s,border-radius 0.3s,opacity 0.3s;
+  opacity: 1;
+}
+
 @media screen and (max-width: 576px) {
   .common-title {
     font-size: 30px;
@@ -344,6 +359,7 @@ button:focus {
 }
 
 .hero {
+  position: relative;
   background-size: cover;
   background-position: bottom center;
 }
@@ -687,6 +703,9 @@ button:focus {
 }
 
 @media screen and (max-width: 768px) {
+  .footer-form__title {
+    text-align: center;
+  }
   .footer-info {
     padding-left: 0;
     text-align: center;
@@ -704,6 +723,7 @@ button:focus {
 
 /*Page portfolio*/
 .portfolio {
+  position: relative;
   background-size: cover;
   background-position: bottom center;
 }
@@ -728,7 +748,6 @@ button:focus {
 }
 
 .project__title {
-  font-size: 43px;
   margin-bottom: 30px;
 }
 
@@ -748,7 +767,6 @@ button:focus {
 }
 
 .credibility__title {
-  font-size: 43px;
   margin-bottom: 30px;
 }
 
@@ -784,6 +802,7 @@ button:focus {
 
 /*Page contacts*/
 .contacts {
+  position: relative;
   background-size: cover;
   background-position: top center;
 }
@@ -791,10 +810,6 @@ button:focus {
 .contacts__content {
   margin-top: 250px;
   max-width: 600px;
-}
-
-.contacts__title {
-  font-size: 40px;
 }
 
 .contacts__btn {
@@ -815,10 +830,6 @@ button:focus {
 
 .our-contacts__title {
   margin-bottom: 50px;
-}
-
-.our-contacts__title h2 {
-  font-size: 43px;
 }
 
 .our-contacts-box {
@@ -873,6 +884,39 @@ button:focus {
   }
   .our-contacts__title h2 {
     font-size: 30px;
+  }
+}
+
+.requisites {
+  background-color: #020202;
+}
+
+.requisites__title {
+  margin-bottom: 30px;
+}
+
+.requisites-content {
+  font-size: 18px;
+}
+
+.requisites-content p:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.requisites-content p:nth-child(7) {
+  margin-bottom: 20px;
+}
+
+.requisites-content a {
+  color: #990f16;
+}
+
+@media screen and (max-width: 992px) {
+  .requisites__title {
+    text-align: center;
+  }
+  .requisites-content {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
