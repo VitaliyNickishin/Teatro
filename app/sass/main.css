@@ -919,4 +919,8 @@ button:focus {
     text-align: center;
   }
 }
+
+.location-map {
+  height: 550px;
+}
 /*# sourceMappingURL=main.css.map */
