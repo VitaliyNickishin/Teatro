@@ -18,6 +18,16 @@ function initMap() {
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
 }
+
+/*Проворачивание треугольника*/
+document.addEventListener("click", function(e) {
+  var elem = e.target.tagName == "A" ? e.target.parentNode : e.target;
+  //console.log(elem.classList.contains("menu_design_drop"));
+  if (elem.classList.contains("menu_design_drop")) {
+      elem.classList.toggle("show")
+  }
+});
+
 /*
 windows.onload = function(){
 

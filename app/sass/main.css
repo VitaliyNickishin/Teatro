@@ -925,4 +925,84 @@ button:focus {
 }
 
 /*Page products*/
+.products {
+  background-color: #020202;
+}
+
+.products-categories li {
+  padding: 6px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.products-categories li a {
+  font-size: 16px;
+  color: #fff;
+}
+
+/*Настройка ссылок*/
+.add_menu_link {
+  position: relative;
+  display: block;
+  padding: 6px 0;
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.add_menu_link:hover {
+  color: #ff0000;
+}
+
+.add_menu_w li .add_menu_link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.3em;
+  margin-top: -5px;
+  border: 6px solid transparent;
+  border-top: 10px solid;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.add_menu_w.show li > .add_menu_link::after {
+  content: "";
+  position: absolute;
+  top: 36%;
+  right: 0.3em;
+  margin-top: -5px;
+  border: 6px solid transparent;
+  border-bottom: 10px solid;
+}
+
+.add_menu_w.show li > .add_drop_block {
+  display: block;
+  opacity: 1;
+  height: initial;
+}
+
+/*выпадающее меню*/
+.add_drop_link {
+  display: block;
+  padding: 0.75em 1.25em;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ff0000;
+}
+
+.add_drop_link:hover {
+  color: #cc0000;
+}
+
+.design_drop_block {
+  opacity: 0;
+  height: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.show {
+  opacity: 1;
+  height: auto;
+}
 /*# sourceMappingURL=main.css.map */
