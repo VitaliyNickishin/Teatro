@@ -939,6 +939,15 @@ button:focus {
   color: #fff;
 }
 
+.children li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /*Настройка ссылок*/
 .add_menu_link {
   position: relative;
@@ -953,7 +962,7 @@ button:focus {
   color: #ff0000;
 }
 
-.add_menu_w li .add_menu_link::after {
+.add_menu_w .add_menu_link::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -961,11 +970,11 @@ button:focus {
   margin-top: -5px;
   border: 6px solid transparent;
   border-top: 10px solid;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-transform: rotate();
+          transform: rotate();
 }
 
-.add_menu_w.show li > .add_menu_link::after {
+.add_menu_w.show > .add_menu_link::after {
   content: "";
   position: absolute;
   top: 36%;
@@ -975,7 +984,7 @@ button:focus {
   border-bottom: 10px solid;
 }
 
-.add_menu_w.show li > .add_drop_block {
+.add_menu_w.show > .add_drop_block {
   display: block;
   opacity: 1;
   height: initial;
