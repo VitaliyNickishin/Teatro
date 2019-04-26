@@ -29,9 +29,9 @@ document.addEventListener("click", function(e) {
 });
 /*Проворачивание стрелки*/
 $(document).ready(function(){
-  $("#navi").click(function(){
-    $("#navi .fa-chevron-down").toggleClass("rtoate180");
-    $("#navigation").stop().slideToggle(500);
+  $(".toggle").click(function(){
+    $(".toggle .fa-chevron-down").toggleClass("rotate");
+    //$("#navigation").stop().slideToggle(500);
   });
 });
 /*

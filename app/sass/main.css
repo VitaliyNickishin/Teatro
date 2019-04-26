@@ -948,22 +948,41 @@ button:focus {
           justify-content: space-between;
 }
 
+.toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-chevron-down {
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/*Сайдбар*/
+.add_menu_block {
+  margin-top: 100px;
+}
+
 /*Настройка ссылок*/
 .add_menu_link {
-  position: relative;
-  display: block;
   padding: 6px 0;
   font-size: 16px;
   color: #fff;
-  border-bottom: 1px solid #fff;
 }
 
 .add_menu_link:hover {
   color: #ff0000;
 }
 
+/*Настройка треугольника*/
 .add_menu_w .add_menu_link::after {
-  content: "";
   position: absolute;
   top: 50%;
   right: 0.3em;
@@ -974,7 +993,7 @@ button:focus {
           transform: rotate();
 }
 
-.add_menu_w.show > .add_menu_link::after {
+.add_menu_w.show .add_drop_w > .add_menu_link::after {
   content: "";
   position: absolute;
   top: 36%;
@@ -984,10 +1003,20 @@ button:focus {
   border-bottom: 10px solid;
 }
 
-.add_menu_w.show > .add_drop_block {
+.add_menu_w.show .add_drop_w > .add_drop_block {
   display: block;
   opacity: 1;
   height: initial;
+}
+
+.add_drop_w {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #fff;
 }
 
 /*выпадающее меню*/
@@ -1003,6 +1032,7 @@ button:focus {
   color: #cc0000;
 }
 
+/*Под меню*/
 .design_drop_block {
   opacity: 0;
   height: 0;
